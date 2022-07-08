@@ -32,7 +32,7 @@ pol_plot <- ggplot(pol, aes(x=reorder(Site, trt_ratio_casy, FUN=median), y=trt_r
 pol_plot
 
 pol_plot
-pdf("plots/pol_plot.pdf")
+pdf("plots/Fig4_pol_plot.pdf")
 print(pol_plot)
 dev.off()
 

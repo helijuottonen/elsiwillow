@@ -22,7 +22,7 @@ levels(pol$Site) <- c("A", "B", "C", "D", "E", "F")
 pol_plot <- ggplot(pol, aes(x=reorder(Site, trt_ratio_casy, FUN=median), y=trt_ratio_casy, fill=honeybees)) +
   geom_boxplot(color="grey60", outlier.shape=NA, width=0.5) +
   geom_point(position=position_jitterdodge(jitter.width=0.15), shape=21, color="grey60", size=2, aes(fill=honeybees)) +
-  labs(y="Pollen remaining (%) \n", x="Study site") +
+  labs(y="pollen remaining (%) \n", x="study site") +
   scale_fill_manual(values=c("yellow", "black")) +
   #scale_x_discrete(labels=c("open", "bagged")) +
   guides(fill="none") +

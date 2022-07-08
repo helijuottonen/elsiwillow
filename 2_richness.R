@@ -151,7 +151,7 @@ summary(frp)
 #Multiple R-squared:  0.1025,	Adjusted R-squared:  0.08299 
 #F-statistic: 5.253 on 1 and 46 DF,  p-value: 0.02653
 
-# regression equation: y=328 - 23.8x, p=0.023
+# regression equation: y=328-23.8x, p=0.023
 
 ### plots for richness vs. pollen: Fig. 5
 
@@ -175,7 +175,7 @@ fdp <- ggplot(fdiv.df.na, aes(x=pollen_remain, y=richness)) +
   ylim(0, 400) +
   scale_x_log10() + 
   theme_cowplot(11) +
-  annotate("text", x=105, y= 5, label="y=328 - 23.8x, P=0.023")
+  annotate("text", x=105, y= 5, label="y=328-23.8x, P=0.023")
 
 fdp
 

@@ -102,8 +102,6 @@ elotub_order_plot <- ggplot(elotub_order_other, aes(x = site, y = Rel.Abundance,
   
 elotub_order_plot
 
-#tax.plots <- plot_grid(elotub_order_plot, xxxx, labels=c("a)", "b)"), label_fontface="plain", ncol=1, align="v")
-
 elotub_order_plot
 pdf("plots/FigS2a_elotub_taxplot.pdf") 
 print(elotub_order_plot)
